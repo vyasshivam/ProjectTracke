@@ -1,0 +1,9 @@
+<div *ngIf="projectList">
+  <div class="grid grid-pad">
+    <a *ngFor="let project of projectList" [routerLink]="['/projectDetail', project.id]" class="col-1-4">
+      <div class="module">
+        {{project.projectName}}
+      </div>
+    </a>
+  </div>
+</div>

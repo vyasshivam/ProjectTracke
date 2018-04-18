@@ -1,0 +1,13 @@
+<div class="pageHeading">
+  <label>Add/Update Project</label>
+</div>
+
+<div class="row">    
+    <input type="number" [(ngModel)]="projectID" placeholder="Project ID"/>
+</div>
+<div class="row">
+    <input type="text" [(ngModel)]="projectName" placeholder="Project Name"/>
+</div>
+<div>
+    <button (click)="saveProject()">Save</button>
+</div>
